@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="countMe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <h1>Watch <span id="movies">250</span> + Movies Free by <span id="hours">24</span>Hours</h1>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="1.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="2.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="3.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="4.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="5.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="6.webp" alt="">
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="1.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="2.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="3.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="4.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="5.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="6.webp" alt="">
+        </div>
+    </div>
+    
+    <script>
+        $("#movies").countMe(0,10)
+        $("#hours").countMe(0,100)
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
